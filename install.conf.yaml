@@ -1,6 +1,7 @@
 - clean:
         - "~"
 - link:
+        ~/.vim: vim
         ~/.vimrc: vimrc
         ~/.zprezto: lib/zprezto
         ~/.zlogin: zsh/zlogin
@@ -9,4 +10,5 @@
         ~/.zprofile: zsh/zprofile
         ~/.zshenv: zsh/zshenv
         ~/.zshrc: zsh/zshrc
-- shell: []
+- shell:
+        - ["lib/powerline-fonts/install.sh", "Installing fonts..."]
