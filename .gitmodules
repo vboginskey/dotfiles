@@ -13,3 +13,6 @@
 [submodule "lib/powerline-fonts"]
 	path = lib/powerline-fonts
 	url = git@github.com:powerline/fonts.git
+[submodule "lib/vim-markdown"]
+	path = lib/vim-markdown
+	url = git@github.com:plasticboy/vim-markdown.git

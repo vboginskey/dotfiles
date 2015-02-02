@@ -1,14 +1,17 @@
 - clean:
         - "~"
 - link:
-        ~/.vim: vim
-        ~/.vimrc: vimrc
+        ~/.vim: vim/vim
+        ~/.vimrc: vim/vimrc
         ~/.zprezto: lib/zprezto
         ~/.zlogin: zsh/zlogin
         ~/.zlogout: zsh/zlogout
         ~/.zpreztorc: zsh/zpreztorc
         ~/.zprofile: zsh/zprofile
         ~/.zshenv: zsh/zshenv
-        ~/.zshrc: zsh/zshrc
+        ~/.zshrc: 
+                force: true
+                path: zsh/zshrc
 - shell:
         - ["lib/powerline-fonts/install.sh", "Installing fonts..."]
+        - ["pip install powerline-status", "Installing Powerline..."]
