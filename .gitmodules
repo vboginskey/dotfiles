@@ -1,3 +1,6 @@
-[submodule "dotbot"]
-	path = dotbot
-	url = https://github.com/anishathalye/dotbot
+[submodule "lib/dotbot"]
+	path = lib/dotbot
+	url = git@github.com:anishathalye/dotbot
+[submodule "lib/zprezto"]
+	path = lib/zprezto
+	url = git@github.com:sorin-ionescu/prezto.git

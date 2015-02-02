@@ -1,3 +1,12 @@
-- clean: []
-- link: {}
+- clean:
+        - "~"
+- link:
+        ~/.vimrc: vimrc
+        ~/.zprezto: lib/zprezto
+        ~/.zlogin: zsh/zlogin
+        ~/.zlogout: zsh/zlogout
+        ~/.zpreztorc: zsh/zpreztorc
+        ~/.zprofile: zsh/zprofile
+        ~/.zshenv: zsh/zshenv
+        ~/.zshrc: zsh/zshrc
 - shell: []
