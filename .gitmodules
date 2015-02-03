@@ -16,3 +16,9 @@
 [submodule "lib/vim-markdown"]
 	path = lib/vim-markdown
 	url = git@github.com:plasticboy/vim-markdown.git
+[submodule "lib/vim-airline"]
+	path = lib/vim-airline
+	url = git@github.com:bling/vim-airline.git
+[submodule "lib/vim-fugitive"]
+	path = lib/vim-fugitive
+	url = git@github.com:tpope/vim-fugitive.git

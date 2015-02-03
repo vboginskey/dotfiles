@@ -6,7 +6,7 @@ This is a repository of my dotfiles.
 
 #### Zsh
 
-Prezto with history-substring-search, yum, git, and tmux integration. Powerline prompt.
+Prezto with history-substring-search, yum, git, and tmux integration.
 
 #### Vim
 
