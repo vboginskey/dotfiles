@@ -15,4 +15,4 @@
                 force: true
                 path: zsh/zshrc
 - shell:
-        - ["lib/powerline-fonts/install.sh", "Installing fonts..."]
+        - lib/powerline-fonts/install.sh

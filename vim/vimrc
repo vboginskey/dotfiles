@@ -19,3 +19,7 @@ let g:tmuxline_preset = {
 
 " Disable airline-tmuxline integration
 let g:airline#extensions#tmuxline#enabled = 0
+
+" Remove duplicate information in status bar
+set noshowcmd
+set noshowmode
