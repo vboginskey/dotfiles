@@ -1,6 +1,8 @@
 - clean:
         - "~"
 - link:
+        ~/.tmux.conf: tmux/tmux.conf
+        ~/.tmuxline.conf: tmux/tmuxline.conf
         ~/.vim: vim/vim
         ~/.vimrc: vim/vimrc
         ~/.zprezto: lib/zprezto
@@ -14,4 +16,3 @@
                 path: zsh/zshrc
 - shell:
         - ["lib/powerline-fonts/install.sh", "Installing fonts..."]
-        - ["pip install powerline-status", "Installing Powerline..."]

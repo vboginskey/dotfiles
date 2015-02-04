@@ -6,3 +6,16 @@ let g:vim_markdown_folding_disabled = 1
 
 " Enable powerline symbols in statusbar
 let g:airline_powerline_fonts = 1
+
+" Tmuxline configuration
+let g:tmuxline_preset = {
+	\'a': '#T',
+	\'win': ['#I', '#W'],
+	\'cwin': ['#I', '#W'],
+	\'z': '%R',
+	\'options': {
+		\'status-justify': 'right'}
+	\}
+
+" Disable airline-tmuxline integration
+let g:airline#extensions#tmuxline#enabled = 0

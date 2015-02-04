@@ -1,6 +1,8 @@
 # Dotfiles
 
-This is a repository of my dotfiles.
+This is a repository of my dotfiles. It's a barebones configuration that sets some sensible defaults and styles the Vim and Tmux status bars.
+
+![Screenshot](https://i.imgur.com/hLThed4.png)
 
 ## Contents
 
@@ -14,7 +16,6 @@ Powerline status line, pathogen, markdown, and vim-sensible.
 
 ## Dependencies
 
-- Python 2.6 or later.
 - Tmux
 - Vim
 - Zsh

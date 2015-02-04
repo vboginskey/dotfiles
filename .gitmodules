@@ -22,3 +22,6 @@
 [submodule "lib/vim-fugitive"]
 	path = lib/vim-fugitive
 	url = git@github.com:tpope/vim-fugitive.git
+[submodule "lib/vim-tmuxline"]
+	path = lib/vim-tmuxline
+	url = git@github.com:edkolev/tmuxline.vim.git
