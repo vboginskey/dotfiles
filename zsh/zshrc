@@ -1,13 +1,19 @@
 #
 # Executes commands at the start of an interactive session.
 #
-# Authors:
-#   Sorin Ionescu <sorin.ionescu@gmail.com>
-#
 
-# Source Prezto.
+# Set up base16 colors
+if [[ -s "${ZDOTDIR:-$HOME}/.config/base16-shell/base16-ocean.dark.sh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.config/base16-shell/base16-ocean.dark.sh"
+fi
+
+# Source Prezto
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Customize to your needs...
+# Source NVM
+if [[ -s "${ZDOTDIR:-$HOME}/.nvm/nvm.sh" ]]; then
+  source "${ZDOTDIR:-$HOME}/.nvm/nvm.sh"
+fi
+

@@ -1,6 +1,8 @@
 - clean:
         - "~"
 - link:
+        ~/.config/base16-shell: lib/base16-shell
+        ~/.nvm: lib/nvm
         ~/.tmux.conf: tmux/tmux.conf
         ~/.tmuxline.conf: tmux/tmuxline.conf
         ~/.vim: vim/vim

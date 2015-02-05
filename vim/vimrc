@@ -1,6 +1,13 @@
 " Load pathogen
 execute pathogen#infect()
 
+" Set up colors
+set t_Co&
+set background=dark
+let base16colorspace=256
+
+colorscheme base16-ocean
+
 " Disable folding in markdown plugin
 let g:vim_markdown_folding_disabled = 1
 
@@ -23,3 +30,6 @@ let g:airline#extensions#tmuxline#enabled = 0
 " Remove duplicate information in status bar
 set noshowcmd
 set noshowmode
+
+" Show line numbers
+set number
