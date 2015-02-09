@@ -5,8 +5,7 @@
         ~/.nvm: lib/nvm
         ~/.tmux.conf: tmux/tmux.conf
         ~/.tmuxline.conf: tmux/tmuxline.conf
-        ~/.vim: vim/vim
-        ~/.vimrc: vim/vimrc
+        ~/.vim: vim
         ~/.zprezto: lib/zprezto
         ~/.zlogin: zsh/zlogin
         ~/.zlogout: zsh/zlogout
