@@ -2,18 +2,17 @@
         - "~"
 - link:
         ~/.config/base16-shell: lib/base16-shell
-        ~/.nvm: lib/nvm
-        ~/.tmux.conf: tmux/tmux.conf
-        ~/.tmuxline.conf: tmux/tmuxline.conf
-        ~/.vim: vim
+        ~/.vim: vim/vim
+        ~/.vimrc: vim/vimrc
         ~/.zprezto: lib/zprezto
         ~/.zlogin: zsh/zlogin
         ~/.zlogout: zsh/zlogout
         ~/.zpreztorc: zsh/zpreztorc
         ~/.zprofile: zsh/zprofile
         ~/.zshenv: zsh/zshenv
-        ~/.zshrc: 
+        ~/.zshrc:
                 force: true
                 path: zsh/zshrc
+        ~/.zshsecret: zsh/zshsecret
 - shell:
         - lib/powerline-fonts/install.sh

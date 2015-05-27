@@ -28,9 +28,6 @@
 [submodule "lib/vim-syntastic"]
 	path = lib/vim-syntastic
 	url = git@github.com:scrooloose/syntastic.git
-[submodule "lib/nvm"]
-	path = lib/nvm
-	url = git@github.com:creationix/nvm.git
 [submodule "lib/vim-base16"]
 	path = lib/base16-vim
 	url = git@github.com:chriskempson/base16-vim.git

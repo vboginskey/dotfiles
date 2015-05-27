@@ -36,7 +36,7 @@ zstyle ':prezto:load' pmodule \
   'git' \
   'yum' \
   'history-substring-search' \
-  'tmux'
+  'ruby'
 
 #
 # Editor
@@ -96,7 +96,7 @@ zstyle ':prezto:module:prompt' theme 'pure'
 #
 
 # Auto switch the Ruby version on directory change.
-# zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
+zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 
 #
 # Screen
@@ -152,7 +152,7 @@ zstyle ':prezto:module:prompt' theme 'pure'
 #
 
 # Auto start a session when Zsh is launched in a local terminal.
-zstyle ':prezto:module:tmux:auto-start' local 'yes'
+# zstyle ':prezto:module:tmux:auto-start' local 'yes'
 
 # Auto start a session when Zsh is launched in a SSH connection.
 # zstyle ':prezto:module:tmux:auto-start' remote 'yes'

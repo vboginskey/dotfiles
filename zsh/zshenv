@@ -9,3 +9,8 @@
 if [[ "$SHLVL" -eq 1 && ! -o LOGIN && -s "${ZDOTDIR:-$HOME}/.zprofile" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprofile"
 fi
+
+# Source secrets
+if [[ -s "${ZDOTDIR:-$HOME}/.zshsecret" ]]; then
+  source "${ZDOTDIR:-$HOME}/.zshsecret"
+fi

@@ -11,9 +11,3 @@ fi
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
-
-# Source NVM
-if [[ -s "${ZDOTDIR:-$HOME}/.nvm/nvm.sh" ]]; then
-  source "${ZDOTDIR:-$HOME}/.nvm/nvm.sh"
-fi
-
