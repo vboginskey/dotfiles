@@ -34,7 +34,7 @@ zstyle ':prezto:load' pmodule \
   'prompt' \
   'completion' \
   'git' \
-  'yum' \
+  'pacman' \
   'history-substring-search' \
   'tmux'
 
