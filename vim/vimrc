@@ -11,7 +11,8 @@ colorscheme base16-ocean
 " Disable folding in markdown plugin
 let g:vim_markdown_folding_disabled = 1
 
-" Enable powerline symbols in statusbar
+" Airline configuration
+let g:airline_theme='base16'
 let g:airline_powerline_fonts = 1
 
 " Tmuxline configuration
@@ -33,3 +34,8 @@ set noshowmode
 
 " Show line numbers
 set number
+
+" Spaces
+set expandtab
+set tabstop=2
+set shiftwidth=2

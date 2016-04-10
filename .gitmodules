@@ -37,3 +37,6 @@
 [submodule "lib/nerdtree"]
 	path = lib/nerdtree
 	url = git@github.com:scrooloose/nerdtree.git
+[submodule "lib/vim-airline-themes"]
+	path = lib/vim-airline-themes
+	url = git@github.com:vim-airline/vim-airline-themes.git
