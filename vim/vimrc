@@ -1,9 +1,37 @@
 "
-" General settings
+" Vundle
 "
 
-" Load pathogen
-execute pathogen#infect()
+" Required options
+set nocompatible
+filetype off
+
+" Set runtime path and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" Let Vundle manage Vundle
+Plugin 'VundleVim/Vundle.vim'
+
+" Plugins
+Plugin 'chriskempson/base16-vim'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'plasticboy/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-sensible'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+" Finish Vundle set up
+call vundle#end()
+filetype plugin indent on
+
+"
+" General settings
+"
 
 " Set up colors
 set t_Co&
@@ -43,7 +71,21 @@ set splitright
 " Key mappings
 "
 
-let mapleader = " "
+" Leader
+let mapleader = "\<Space>"
+nnoremap <Space> <nop>
+
+let g:ctrlp_map = '<Leader>p'
+nnoremap <Leader><space> :NERDTreeToggle<cr>
+
+"
+" Autocommands
+"
+
+augroup reload_vimrc " {
+  autocmd!
+  autocmd BufWritePost $MYVIMRC source $MYVIMRC
+augroup END " }
 
 "
 " Plugin configuration
@@ -52,6 +94,7 @@ let mapleader = " "
 " vim-airline
 let g:airline_theme = 'base16'
 let g:airline_powerline_fonts = 1
+let g:airline#extensions#ctrlp#color_template = 'normal'
 let g:airline#extensions#tmuxline#enabled = 0
 
 " vim-tmuxline
