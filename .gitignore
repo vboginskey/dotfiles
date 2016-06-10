@@ -1,5 +1,2 @@
-# netrw history
-.netrwhist
-
-# secrets
-zshsecret
+vim/vim/bundle/**
+!vim/vim/bundle/Vundle.vim
