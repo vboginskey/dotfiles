@@ -35,3 +35,16 @@
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Vim #
+#######
+# swap
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+# session
+Session.vim
+# temporary
+.netrwhist
+*~
+# auto-generated tag files
+tags

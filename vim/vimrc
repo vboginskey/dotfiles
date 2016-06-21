@@ -10,14 +10,13 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
-" Let Vundle manage Vundle
-Plugin 'VundleVim/Vundle.vim'
-
 " Plugins
 Plugin 'chriskempson/base16-vim'
-Plugin 'edkolev/tmuxline.vim'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'edkolev/tmuxline.vim'
+Plugin 'fatih/vim-go'
 Plugin 'plasticboy/vim-markdown'
+Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
@@ -96,6 +95,12 @@ augroup END " }
 "
 " Plugin configuration
 "
+
+" ctrlp
+"let g:ctrlp_user_command = 'ag -Q -l --nocolor --hidden -g "" %s'
+
+" syntastic
+let g:syntastic_check_on_open = 1
 
 " vim-airline
 let g:airline_theme = 'base16'
