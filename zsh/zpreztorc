@@ -25,17 +25,24 @@ zstyle ':prezto:*:*' color 'yes'
 # The order matters.
 zstyle ':prezto:load' pmodule \
   'environment' \
-  'terminal' \
   'editor' \
   'history' \
   'directory' \
   'spectrum' \
+  'gnu-utility' \
   'utility' \
-  'prompt' \
   'completion' \
+  'fasd' \
   'git' \
-  'history-substring-search' \
-  'ruby'
+  'ruby' \
+  'prompt' \
+  'history-substring-search'
+#
+# Autosuggestions
+#
+
+# Set the query found color.
+# zstyle ':prezto:module:autosuggestions:color' found ''
 
 #
 # Editor
@@ -45,7 +52,7 @@ zstyle ':prezto:load' pmodule \
 zstyle ':prezto:module:editor' key-bindings 'vi'
 
 # Auto convert .... to ../..
-zstyle ':prezto:module:editor' dot-expansion 'yes'
+# zstyle ':prezto:module:editor' dot-expansion 'yes'
 
 #
 # Git
@@ -124,6 +131,7 @@ zstyle ':prezto:module:ruby:chruby' auto-switch 'yes'
 #   'main' \
 #   'brackets' \
 #   'pattern' \
+#   'line' \
 #   'cursor' \
 #   'root'
 #
