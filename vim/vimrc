@@ -12,9 +12,11 @@ call vundle#begin()
 
 " Plugins
 Plugin 'chriskempson/base16-vim'
+Plugin 'christoomey/vim-tmux-navigator'
 Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'edkolev/tmuxline.vim'
 Plugin 'fatih/vim-go'
+Plugin 'jeetsukumaran/vim-indentwise'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'rking/ag.vim'
 Plugin 'scrooloose/nerdtree'
@@ -59,8 +61,7 @@ set list listchars=tab:»·,trail:·,nbsp:·
 autocmd Filetype markdown setlocal ts=4 sw=4
 
 " 80 character ruler
-set textwidth=80
-set colorcolumn=+1
+set colorcolumn=80
 
 " Open new split panes to right and bottom
 set splitbelow
@@ -75,7 +76,8 @@ let mapleader = "\<Space>"
 nnoremap <Space> <nop>
 
 let g:ctrlp_map = '<Leader>p'
-nnoremap <Leader><space> :NERDTreeToggle<cr>
+nnoremap <Leader><space> :NERDTreeFind<cr>
+nnoremap <Leader>b :NERDTreeToggle<cr>
 
 " Quicker window movement
 nnoremap <C-j> <C-w>j
@@ -97,7 +99,7 @@ augroup END " }
 "
 
 " ctrlp
-"let g:ctrlp_user_command = 'ag -Q -l --nocolor --hidden -g "" %s'
+let g:ctrlp_user_command = 'ag -Q -l --nocolor --hidden -g "" %s'
 
 " syntastic
 let g:syntastic_check_on_open = 1
