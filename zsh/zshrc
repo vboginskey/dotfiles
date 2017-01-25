@@ -11,3 +11,48 @@ fi
 if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
+
+# Named directories
+INFRA_BIN_DIR="${HOME}/Development/infrastructure/bin"
+
+# Docker-machine stuff
+eval $(docker-machine env)
+
+# Aliases
+alias 2.=../..
+alias 3.=../../..
+alias 4.=../../../..
+alias cl=cdls
+alias gpr="hub pull-request -o"
+alias awscm=~INFRA_BIN_DIR/aws_credential_manager
+
+# Helper functions
+n2ip() {
+  aws ec2 --region us-east-1 describe-instances --filters \
+    "Name=tag:Name,Values=*$1*" \
+    Name=instance-state-name,Values=running | jq -r \
+    '.Reservations[].Instances[].NetworkInterfaces[0].PrivateIpAddress'
+}
+
+ctx() {
+  case $1 in
+    i)
+      eval $($INFRA_BIN_DIR/switch_aws_acct interview)
+      RPROMPT="%F{yellow}AWS"
+      ;;
+    s)
+      awscm get-session-token support
+      export AWS_PROFILE=support-mfa
+      RPROMPT="%F{green}AWS"
+      ;;
+    p)
+      awscm assume-role prod
+      export AWS_PROFILE=prod
+      RPROMPT="%F{red}AWS"
+      ;;
+    *)
+      unset -m "AWS_*"
+      unset RPROMPT
+      return
+  esac
+}
