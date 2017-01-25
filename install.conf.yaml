@@ -4,6 +4,7 @@
         ~/.config/base16-shell: lib/base16-shell
         ~/.gitignore: gitignore
         ~/.tmux.conf: tmux/tmux.conf
+        ~/.tmux-osx.conf: tmux/tmux-osx.conf
         ~/.tmuxline.conf: tmux/tmuxline.conf
         ~/.vim: vim/vim
         ~/.vimrc: vim/vimrc
